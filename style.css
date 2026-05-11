@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(
+    circle at top left,
+    #6d005f 0%,
+    #180024 35%,
+    #070012 70%,
+    #020006 100% );
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main{
+    /* background-color: rgb(215, 207, 196); */
+    height: 90%;
+  width: 90%;
+  
+}
+
+header{
+     display: flex;
+  justify-content: space-between;
+}
+header h3{
+    font-weight: 300;
+    cursor: pointer;
+}
+header a{
+    font-weight: 300;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.all-cards{
+    height: 100%;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card{
+    height: 320px;
+    width: 250px;
+    background-color: rgba(255,255,255,0.10);
+    padding: 5%;
+    margin: 2% 0%;
+    border-radius: 20px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover; 
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+}
+
+.text{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top:4%;
+}
+.text h3{
+    font-size: 15px;
+    font-weight: 300;
+}
+.text .price{
+    font-size: 12px;
+    font-weight: 300;
+}
+.text .heart{
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.btn button{
+       background-color: rgba(255,255,255,0.10);
+    width: 90%;
+    padding: 2%;
+    border-color: #6d005f;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn p{
+    color: #ffffff;
+}
